@@ -1662,8 +1662,8 @@
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_CES/aircraft.cfg",
-      "size": 649,
-      "date": 133427364034881175
+      "size": 648,
+      "date": 133427451673006526
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_CES/TEXTURE.B789_CES_B206K/787_10_AIRFRAME_DECALS2_ALBD.PNG.DDS",
@@ -3406,9 +3406,19 @@
       "date": 133427371490151927
     },
     {
+      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_DECALS2_ALBD.PNG.dds",
+      "size": 16777364,
+      "date": 133403919877773527
+    },
+    {
+      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_DECALS2_ALBD.PNG.DDS.json",
+      "size": 119,
+      "date": 133382434220000000
+    },
+    {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_ENGINE_ALBD.PNG.DDS",
-      "size": 16777344,
-      "date": 133380565744609280
+      "size": 16777364,
+      "date": 133422250020268344
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_ENGINE_ALBD.PNG.DDS.json",
@@ -3417,8 +3427,8 @@
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_FUSELAGE1_ALBD.PNG.DDS",
-      "size": 16777344,
-      "date": 133380739323614611
+      "size": 67109012,
+      "date": 133422236630694371
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_FUSELAGE1_ALBD.PNG.DDS.json",
@@ -3427,8 +3437,8 @@
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_FUSELAGE2_ALBD.PNG.DDS",
-      "size": 16777344,
-      "date": 133380732954291446
+      "size": 67109012,
+      "date": 133422236168144032
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_FUSELAGE2_ALBD.PNG.DDS.json",
@@ -3436,9 +3446,19 @@
       "date": 133363553460000000
     },
     {
+      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_HUBLOT_EMIS.PNG.DDS",
+      "size": 1048704,
+      "date": 133392451420000000
+    },
+    {
+      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_HUBLOT_EMIS.PNG.DDS.json",
+      "size": 119,
+      "date": 133392451420000000
+    },
+    {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_LIVERY1_ALBD.PNG.DDS",
-      "size": 4194432,
-      "date": 133380762796501291
+      "size": 4194452,
+      "date": 133403254164166517
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_LIVERY1_ALBD.PNG.DDS.json",
@@ -3447,8 +3467,8 @@
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_TAIL_ALBD.PNG.DDS",
-      "size": 16777344,
-      "date": 133380732089398341
+      "size": 67109012,
+      "date": 133422234944696898
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_TAIL_ALBD.PNG.DDS.json",
@@ -3458,7 +3478,7 @@
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_WINGS_ALBD.PNG.DDS",
       "size": 16777344,
-      "date": 133380567345622492
+      "date": 133422270682787239
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_10_AIRFRAME_WINGS_ALBD.PNG.DDS.json",
@@ -3466,9 +3486,29 @@
       "date": 133374176740000000
     },
     {
-      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_9_M_BELLY_ALBD.PNG.DDS",
+      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_9_AIRFRAME_ENGINER_ALBD.PNG.DDS",
+      "size": 16777364,
+      "date": 133422249632169171
+    },
+    {
+      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_9_AIRFRAME_ENGINER_ALBD.PNG.DDS.json",
+      "size": 102,
+      "date": 133392531930000000
+    },
+    {
+      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_9_AIRFRAME_WINGSR_ALBD.PNG.DDS",
       "size": 16777344,
-      "date": 133380793601661275
+      "date": 133422269354338516
+    },
+    {
+      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_9_AIRFRAME_WINGSR_ALBD.PNG.DDS.json",
+      "size": 102,
+      "date": 133392531930000000
+    },
+    {
+      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_9_M_BELLY_ALBD.PNG.DDS",
+      "size": 67109012,
+      "date": 133422235771762006
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_9_M_BELLY_ALBD.PNG.DDS.json",
@@ -3476,9 +3516,29 @@
       "date": 133363553460000000
     },
     {
+      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_9_RIGHT_ALBD.PNG.DDS",
+      "size": 16777364,
+      "date": 133422235421629320
+    },
+    {
+      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_9_RIGHT_ALBD.PNG.DDS.json",
+      "size": 102,
+      "date": 133395214670000000
+    },
+    {
+      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_9_Tail_Decals.PNG.DDS",
+      "size": 16777364,
+      "date": 133422235249357597
+    },
+    {
+      "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/787_9_TAIL_DECALS.PNG.DDS.json",
+      "size": 102,
+      "date": 133383380540000000
+    },
+    {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/LIVERY_KLM.PNG.DDS",
-      "size": 4194432,
-      "date": 133380762185792356
+      "size": 16777364,
+      "date": 133422242014086745
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/LIVERY_KLM.PNG.DDS.json",
@@ -3492,13 +3552,13 @@
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/thumbnail.JPG",
-      "size": 474998,
-      "date": 133380799628661862
+      "size": 74039,
+      "date": 133422277038833938
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KAL/TEXTURE.B789_KAL_HL8084/thumbnail_small.JPG",
-      "size": 474998,
-      "date": 133380799769879744
+      "size": 17119,
+      "date": 133422277039074328
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_KLM/aircraft.cfg",
