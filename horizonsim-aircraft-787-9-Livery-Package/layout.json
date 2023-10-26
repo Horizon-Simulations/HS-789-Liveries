@@ -1512,8 +1512,8 @@
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_BLX/aircraft.cfg",
-      "size": 664,
-      "date": 133427822437650188
+      "size": 666,
+      "date": 133427860079795234
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_BLX/TEXTURE.B789_BLX_SERFZ/787_10_AIRFRAME_DECALS2_ALBD.PNG.DDS",
@@ -1538,7 +1538,7 @@
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_BLX/TEXTURE.B789_BLX_SERFZ/787_10_AIRFRAME_FUSELAGE1_ALBD.png.dds",
       "size": 67109012,
-      "date": 133427827326848762
+      "date": 133427848571679804
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_BLX/TEXTURE.B789_BLX_SERFZ/787_10_AIRFRAME_FUSELAGE1_ALBD.PNG.DDS.json",
@@ -1577,8 +1577,8 @@
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_BLX/TEXTURE.B789_BLX_SERFZ/787_10_AIRFRAME_WINGS_ALBD.PNG.DDS",
-      "size": 67108992,
-      "date": 133404982567212969
+      "size": 16777364,
+      "date": 133427858321554480
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_BLX/TEXTURE.B789_BLX_SERFZ/787_10_AIRFRAME_WINGS_ALBD.PNG.DDS.json",
@@ -5162,8 +5162,8 @@
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_TOM/TEXTURE.B789_TOM_GTUIN/787_10_AIRFRAME_WINGS_ALBD.PNG.DDS",
-      "size": 67108992,
-      "date": 133404982567212969
+      "size": 16777364,
+      "date": 133427859184804637
     },
     {
       "path": "SimObjects/Airplanes/HorizonSim_B787_9_TOM/TEXTURE.B789_TOM_GTUIN/787_10_AIRFRAME_WINGS_ALBD.PNG.DDS.json",
