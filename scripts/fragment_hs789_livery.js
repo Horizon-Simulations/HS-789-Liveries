@@ -5,87 +5,132 @@ const execute = async () => {
     try {
         const result = await fragmenter.pack({
             packOptions: { splitFileSize: 102_760_448, keepCompleteModulesAfterSplit: false },
-            baseDir: './horizonsim-789/build/horizonsim-aircraft-787-9',
-            outDir: './horizonsim-789/build/build-modules',
+            baseDir: './horizonsim-aircraft-789-9-Livery-Package/build/horizonsim-aircraft-787-9',
+            outDir: './horizonsim-aircraft-789-9-Livery-Package/build/build-modules',
             modules: [{
-                name: 'effects',
-                sourceDir: './Effects'
+                name: 'American Airlines',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_AAL'
             }, {
-                name: 'html_ui_fonts',
-                sourceDir: './html_ui'
+                name: 'Air Canada',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_ACA'
             }, {
-                name: 'ContentInfo',
-                sourceDir: './ContentInfo'
+                name: 'Air Canada 2',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_ACA2'
             }, {
-                name: 'B787_9_GE_House_Textures',
-                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_GE_HOUSE'
+                name: 'Air Canada 3',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_ACA3'
             }, {
-                name: 'B787_9_RR_House_Textures',
-                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_RR_HOUSE'
+                name: 'Air Europa',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_AEA'
             }, {
-                name: 'B787_9_GENX_Checklist',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_GENX/Checklist'
+                name: 'Air France',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_AFR'
             }, {
-                name: 'B787_9_GENX_Model',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_GENX/model'
+                name: 'All Nippon Airways',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_ANA'
             }, {
-                name: 'B787_9_GENX_Panel_GE',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_GENX/panel.GE'
+                name: 'All Nippon Airways Star Wars',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_ANA2'
             }, {
-                name: 'B787_9_GENX_Panel_GE_R',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_GENX/panel.GE.R'
+                name: 'Air New Zealand',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_ANZ'
             }, {
-                name: 'B787_9_GENX_Panel_GE_RW',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_GENX/panel.GE.RW'
+                name: 'Air New Zealand 2',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_ANZ2'
             }, {
-                name: 'B787_9_GENX_Panel_GE_W',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_GENX/panel.GE.W'
+                name: 'British Airways',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_BAW'
             }, {
-                name: 'B787_9_GENX_RTC',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_GENX/rtc'
+                name: 'TUI fly Nordic',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_BLX'
             }, {
-                name: 'B787_9_GENX_SOUND',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_GENX/sound'
+                name: 'Air China',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_CCA'
             }, {
-                name: 'B787_9_GENX_TEXTURE',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_GENX/TEXTURE.GE'
+                name: 'China Eastern Airlines',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_CES'
             }, {
-                name: 'HorizonSim_B787_9_SHARED_TEXTURE',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_SHARED/TEXTURE'
+                name: 'Hainan Airlines',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_CHH'
             }, {
-                name: 'HorizonSim_B787_9_SHARED_TEXTURE_HORIZONSIM',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_SHARED/TEXTURE.HorizonSim'
+                name: 'Shanghai Airlines',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_CSH'
             }, {
-                name: 'B787_9_TRENT_Checklist',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_TRENT/Checklist'
+                name: 'China Southern Airlines',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_CSN'
             }, {
-                name: 'B787_9_TRENT_Model',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_TRENT/model'
+                name: 'Xiamen Air',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_CXA'
             }, {
-                name: 'B787_9_TRENT_Panel_RR',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_TRENT/panel.RR'
+                name: 'Xiamen Air 2',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_CXA2'
             }, {
-                name: 'B787_9_TRENT_Panel_RR_R',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_TRENT/panel.RR.R'
+                name: 'Juneyao Air',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_DKH'
             }, {
-                name: 'B787_9_TRENT_Panel_RR_RW',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_TRENT/panel.RR.RW'
+                name: 'Lufthansa',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_DLH'
             }, {
-                name: 'B787_9_TRENT_Panel_RR_W',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_TRENT/panel.RR.W'
+                name: 'El Al',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_ELY'
             }, {
-                name: 'B787_9_TRENT_RTC',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_TRENT/rtc'
+                name: 'El Al 2',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_ELY2'
             }, {
-                name: 'B787_9_TRENT_SOUND',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_TRENT/sound'
+                name: 'Etihad',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_ETD'
             }, {
-                name: 'B787_9_TRENT_TEXTURE',
-                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_TRENT/TEXTURE.RR'
+                name: 'Japan Airlines',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_JAL'
+            }, {
+                name: 'Korean Airlines',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_KAL'
+            }, {
+                name: 'KLM Royal Dutch Airlines',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_KLM'
+            }, {
+                name: 'LOT Polish Airlines',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_LOT'
+            }, {
+                name: 'Egyptair',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_MSR'
+            }, {
+                name: 'Norse Atlantic Airways',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_NBT'
+            }, {
+                name: 'Qantas',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_QFA'
+            }, {
+                name: 'Saudia',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_SVA'
+            }, {
+                name: 'Scoot',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_TGW'
+            }, {
+                name: 'Thai Airways International',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_THA'
+            }, {
+                name: 'TUI Airways',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_TOM'
+            }, {
+                name: 'United Airlines',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_UAL'
+            }, {
+                name: 'Norse Atlantic UK',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_UBT'
+            }, {
+                name: 'Virgin Atlantic',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_VIR'
+            }, {
+                name: 'Vistara',
+                sourceDir: './SimObjects/Airplanes/_HorizonSim_B787_9_VTI'
+            }, {
+                name: 'Westjet',
+                sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_TRENT/WJA'
             }]
         });
         console.log(result);
-        console.log(fs.readFileSync('./horizonsim-789/build/build-modules/modules.json').toString());
+        console.log(fs.readFileSync('./horizonsim-aircraft-789-9-Livery-Package/build/build-modules/modules.json').toString());
     } catch (e) {
         console.error(e);
         process.exit(1);
