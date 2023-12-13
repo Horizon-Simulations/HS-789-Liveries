@@ -25,11 +25,11 @@ jobs:
       - name: Free Disk Space (Ubuntu)
         uses: jlumbroso/free-disk-space@main
         with:
-          tool-cache: false
+          tool-cache: true
           android: true
-          dotnet: false
+          dotnet: true
           haskell: false
-          large-packages: false
+          large-packages: true
           docker-images: false
           swap-storage: false
       - name: Checkout source
@@ -54,6 +54,7 @@ jobs:
         run: |
           ./scripts/dev-env/run.sh ./scripts/build-hs789-liveries.sh --no-tty -j 4
           docker system prune -af
+          rm -rf ./hs-789-liveries/src
       - name: Build ZIP files
         run: |
           node ./scripts/fragment-hs789-liveries.js
