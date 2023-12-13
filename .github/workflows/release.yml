@@ -11,7 +11,7 @@ on:
 jobs:
   build-livery-package:
     # Prevent running this on forks
-    if: github.repository_owner == 'headwindsim'
+    if: github.repository_owner == 'Horizon-Simulations'
     name: 'Build HS789 Livery Package'
     runs-on: ubuntu-latest
     env:
