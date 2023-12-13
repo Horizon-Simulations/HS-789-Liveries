@@ -1,6 +1,6 @@
 {
   "name": "hs789-livery-package",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "edition": "development",
   "imports": {
     "#build-utils": "./build-utils.js"
