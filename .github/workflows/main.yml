@@ -1,0 +1,76 @@
+name: development
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-livery-package:
+    # Prevent running this on forks
+    if: github.repository_owner == 'headwindsim'
+    name: 'Build HS789 Livery Package'
+    runs-on: ubuntu-latest
+    env:
+      A32NX_PRODUCTION_BUILD: 1
+      A32NX_INSTRUMENTS_BUILD_WORKERS: 2
+      ZIP_NAME: hs789-livery-package-dev.zip
+      BUILD_DIR_NAME: dev
+      CLOUDFLARE_WORKER_PASSWORD: ${{ secrets.CLOUDFLARE_WORKER_PASSWORD }}
+      CDN_BUCKET_DESTINATION: addons/hs789-livery-package/dev
+    steps:
+      - name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
+        with:
+          tool-cache: false
+          android: true
+          dotnet: false
+          haskell: false
+          large-packages: false
+          docker-images: false
+          swap-storage: false
+      - name: Checkout source
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Set BUILT_DATE_TIME
+        run: echo "BUILT_DATE_TIME=$(date -u -Iseconds)" >> $GITHUB_ENV
+      - name: Create .env file
+        run: |
+          echo A32NX_PRODUCTION_BUILD=1 >> .env
+          echo CLIENT_ID=${{ secrets.NAVIGRAPH_CLIENT_ID }} >> .env
+          echo CLIENT_SECRET=${{ secrets.NAVIGRAPH_CLIENT_SECRET }} >> .env
+          echo CHARTFOX_SECRET=${{ secrets.CHARTFOX_SECRET }} >> .env
+          echo SENTRY_DSN=${{ secrets.SENTRY_DSN }} >> .env
+          echo BUILD_DIR_NAME=${{ env.BUILD_DIR_NAME }} >> .env
+          echo LOCALAZY_READ_KEY=${{ secrets.LOCALAZY_READ_KEY }} >> .env
+      - name: Setup Package
+        run: |
+          ./scripts/dev-env/run.sh ./scripts/setup.sh --clean
+      - name: Build Livery Package
+        run: |
+          ./scripts/dev-env/run.sh ./scripts/build-hs789-liveries.sh --no-tty -j 4
+          docker system prune -af
+      - name: Build ZIP files
+        run: |
+          node ./scripts/fragment-hs789-liveries.js
+          cp ./hs-789-liveries/out/build-modules/modules.json ./hs-789-liveries/out/horizonsim-aircraft-787-9-livery-package/install.json
+          node ./scripts/install-source-hs789-liveries.js
+          mkdir ./${{ env.BUILD_DIR_NAME }}
+          cd ./hs-789-liveries/out/
+          zip -r ../../${{ env.BUILD_DIR_NAME }}/${{ env.ZIP_NAME }} ./horizonsim-aircraft-787-9-livery-package/
+          cd ../../
+      - name: Upload to CloudFlare CDN
+        run: |
+          ./scripts/cdn.sh $CDN_BUCKET_DESTINATION ./hs-789-liveries/out/build-modules
+      - name: Get short SHA
+        uses: benjlevesque/short-sha@v2.2
+        id: short-sha
+      - name: Upload Release Config to CloudFlare CDN
+        env:
+          SHA: ${{ steps.short-sha.outputs.sha }}
+        run: |
+          mkdir -p ./hs-789-liveries/out/config
+          echo "releases:" >> ./hs-789-liveries/out/config/releases.yaml
+          echo "  - name: $SHA" >> ./hs-789-liveries/out/config/releases.yaml
+          echo "    date: $(date -u +"%Y-%m-%dT%H:%M:%SZ")" >> ./hs-789-liveries/out/config/releases.yaml
+          ./scripts/cdn.sh $CDN_BUCKET_DESTINATION ./hs-789-liveries/out/config

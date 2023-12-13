@@ -1,2 +1,42 @@
+# general exclusions
+.DS_Store
 
-horizonsim-aircraft-787-9-Livery-Package.rar
+# exclude changes to root directory
+*
+/.*/
+
+# Explicit inclusions
+!*/
+!/.github/**
+!/.vscode/**
+
+!.editorconfig
+!.eslintrc
+!.gitattributes
+!.gitignore
+!.npmrc
+!.prettierignore
+!.prettierrc.json
+
+!igniter.config.mjs
+!a333x-igniter.config.mjs
+!jsconfig.json
+
+!hs-789-liveries/src/base/manifest-base.json
+!package.json
+
+/hs-789-liveries/*
+!/hs-789-liveries/src/
+!/hs-789-liveries/src/**
+
+!/scripts/**
+
+!/build-utils.js
+
+# explicit exclusions
+/.env
+node_modules/
+obj/
+target/
+*.tgz
+*.wasm

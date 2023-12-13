@@ -1,0 +1,22 @@
+{
+  "name": "hs789-livery-package",
+  "version": "1.0.0",
+  "edition": "development",
+  "imports": {
+    "#build-utils": "./build-utils.js"
+  },
+  "scripts": {
+    "====== HS789 LIVERY PACKAGE ====": "==========================================",
+    "build-hs789-livery-package:copy-base-package": "mkdir -p /hs-789-liveries/out/horizonsim-aircraft-787-9-livery-package && (rsync -a hs-789-liveries/src/base/horizonsim-aircraft-787-9-livery-package hs-789-liveries/out || cp -a -u hs-789-liveries/src/base/horizonsim-aircraft-787-9-livery-package hs-789-liveries/out)",
+    "build-hs789-livery-package:copy-base-files": "npm run build-hs789-livery-package:copy-base-package",
+    "build-hs789-livery-package:manifest": "node scripts/build-hs789-liveries.js",
+    "====== COMMON ================": "==========================================",
+    "lint": "eslint --cache **/*.{js,mjs,jsx,ts,tsx}",
+    "lint-fix": "npm run lint -- --fix",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@flybywiresim/fragmenter": "^0.7.4",
+    "@flybywiresim/igniter": "^1.2.3"
+  }
+}
