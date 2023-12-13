@@ -8,94 +8,94 @@ const execute = async () => {
             baseDir: './hs-789-liveries/out/horizonsim-aircraft-787-9-livery-package',
             outDir: './hs-789-liveries/out/build-modules',
             modules: [{
-                name: 'American Airlines',
+                name: 'American_Airlines',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_AAL'
             }, {
-                name: 'Air Canada',
+                name: 'Air_Canada',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_ACA'
             }, {
-                name: 'Air Canada 2',
+                name: 'Air_Canada_2',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_ACA2'
             }, {
-                name: 'Air Canada 3',
+                name: 'Air_Canada_3',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_ACA3'
             }, {
-                name: 'Air Europa',
+                name: 'Air_Europa',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_AEA'
             }, {
-                name: 'Air France',
+                name: 'Air_France',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_AFR'
             }, {
-                name: 'All Nippon Airways',
+                name: 'All_Nippon_Airways',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_ANA'
             }, {
-                name: 'All Nippon Airways Star Wars',
+                name: 'All_Nippon_Airways_Star_Wars',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_ANA2'
             }, {
-                name: 'Air New Zealand',
+                name: 'Air_New_Zealand',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_ANZ'
             }, {
-                name: 'Air New Zealand 2',
+                name: 'Air_New_Zealand_2',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_ANZ2'
             }, {
-                name: 'British Airways',
+                name: 'British_Airways',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_BAW'
             }, {
-                name: 'TUI fly Nordic',
+                name: 'TUI_fly_Nordic',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_BLX'
             }, {
-                name: 'Air China',
+                name: 'Air_China',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_CCA'
             }, {
-                name: 'China Eastern Airlines',
+                name: 'China_Eastern_Airlines',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_CES'
             }, {
-                name: 'Hainan Airlines',
+                name: 'Hainan_Airlines',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_CHH'
             }, {
-                name: 'Shanghai Airlines',
+                name: 'Shanghai_Airlines',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_CSH'
             }, {
-                name: 'China Southern Airlines',
+                name: 'China_Southern_Airlines',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_CSN'
             }, {
-                name: 'Xiamen Air',
+                name: 'Xiamen_Air',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_CXA'
             }, {
-                name: 'Xiamen Air 2',
+                name: 'Xiamen_Air_2',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_CXA2'
             }, {
-                name: 'Juneyao Air',
+                name: 'Juneyao_Air',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_DKH'
             }, {
                 name: 'Lufthansa',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_DLH'
             }, {
-                name: 'El Al',
+                name: 'El_Al',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_ELY'
             }, {
-                name: 'El Al 2',
+                name: 'El_Al_2',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_ELY2'
             }, {
                 name: 'Etihad',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_ETD'
             }, {
-                name: 'Japan Airlines',
+                name: 'Japan_Airlines',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_JAL'
             }, {
-                name: 'Korean Airlines',
+                name: 'Korean_Airlines',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_KAL'
             }, {
-                name: 'KLM Royal Dutch Airlines',
+                name: 'KLM_Royal_Dutch_Airlines',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_KLM'
             }, {
-                name: 'LOT Polish Airlines',
+                name: 'LOT_Polish_Airlines',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_LOT'
             }, {
                 name: 'Egyptair',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_MSR'
             }, {
-                name: 'Norse Atlantic Airways',
+                name: 'Norse_Atlantic_Airways',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_NBT'
             }, {
                 name: 'Qantas',
@@ -107,19 +107,19 @@ const execute = async () => {
                 name: 'Scoot',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_TGW'
             }, {
-                name: 'Thai Airways International',
+                name: 'Thai_Airways_International',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_THA'
             }, {
-                name: 'TUI Airways',
+                name: 'TUI_Airways',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_TOM'
             }, {
-                name: 'United Airlines',
+                name: 'United_Airlines',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_UAL'
             }, {
-                name: 'Norse Atlantic UK',
+                name: 'Norse_Atlantic_UK',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_UBT'
             }, {
-                name: 'Virgin Atlantic',
+                name: 'Virgin_Atlantic',
                 sourceDir: './SimObjects/Airplanes/HorizonSim_B787_9_VIR'
             }, {
                 name: 'Vistara',
