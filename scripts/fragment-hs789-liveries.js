@@ -4,6 +4,7 @@ const fs = require('fs');
 const execute = async () => {
     try {
         const result = await fragmenter.pack({
+            version: require('./fragmenter_version').version,
             packOptions: { splitFileSize: 102_760_448, keepCompleteModulesAfterSplit: false },
             baseDir: './hs-789-liveries/out/horizonsim-aircraft-787-9-livery-package',
             outDir: './hs-789-liveries/out/build-modules',
